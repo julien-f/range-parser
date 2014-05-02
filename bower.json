@@ -1,0 +1,21 @@
+{
+  "name": "range-parser2",
+  "main": "index.js",
+  "version": "0.1.0",
+  "authors": [
+    "Julien Fontanet <julien.fontanet@isonoe.net>"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
