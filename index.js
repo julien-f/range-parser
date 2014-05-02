@@ -19,9 +19,9 @@
 
   var is = (function () {
     var is = {
-      object: function (value) {
-        return ((value !== null) && (typeof value === 'object'));
-      },
+      // object: function (value) {
+      //   return ((value !== null) && (typeof value === 'object'));
+      // },
       integer: function (value) {
         return is.number(value) && (value % 1 === 0);
       },
