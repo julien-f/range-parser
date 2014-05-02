@@ -11,26 +11,32 @@
 
 Download [manually](https://github.com/julien-f/range-parser/releases) or with package-manager.
 
-#### [npm](https://npmjs.org/package/range-parser)
+#### [npm](https://npmjs.org/package/range-parser2)
 
 ```
-npm install --save range-parser
+npm install --save range-parser2
 ```
 
 ### bower
 
 ```
-bower install --save range-parser
+bower install --save range-parser2
 ```
 
 ## Example
 
 ```javascript
-var parseRange = require('range-parser');
+var parseRange = require('range-parser2');
 
 console.log(parseRange('5-12,15'));
 //=> [5, 6, 7, 8, 9, 10, 11, 12, 15];
 ```
+
+## Name
+
+The name [range-parser](https://npmjs.org/package/range-parser) was already taken so I went for *range-parser2*.
+
+I am open to a better name ;)
 
 ## Contributing
 
