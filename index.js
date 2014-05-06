@@ -109,16 +109,6 @@
 
   var parseUnion = function (union) {
     var i, n, results;
-
-    if (is.number(union))
-    {
-      union = ''+ union;
-    }
-    else if (!is.string(union))
-    {
-      throw new Error('invalid union: '+ union);
-    }
-
     results = [];
     union = union.split(',');
     for (i = 0, n = union.length; i < n; ++i)
@@ -127,20 +117,29 @@
     }
     return results;
   };
-  parseUnion.parseEntry = function (entry) {
-    return [parseEntry(entry)];
-  };
-  parseUnion.parseRange = function (range) {
-    // FIXME: duplicated in parseUnion.
+
+  var clean = function (range) {
     if (is.number(range))
     {
       range = ''+ range;
     }
+    else if (!is.string(range))
+    {
+      throw new Error('invalid range: '+ range);
+    }
 
+    return range;
+  };
+
+  var parser = function (union) {
+    return parseUnion(clean(union));
+  };
+  parser.withoutUnions = function (range) {
+    range = clean(range);
     var results = [];
     parseRange(range, results);
     return results;
   };
 
-  return parseUnion;
+  return parser;
 }));

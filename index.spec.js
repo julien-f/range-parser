@@ -69,17 +69,10 @@ describe('parseRange()', function () {
   succeed(parseRange, 'range');
   succeed(parseRange, 'union');
 
-  describe('.parseEntry()', function () {
-    succeed(parseRange.parseEntry, 'entry');
+  describe('.withoutUnions()', function () {
+    succeed(parseRange.withoutUnions, 'entry');
+    succeed(parseRange.withoutUnions, 'range');
 
-    fail(parseRange.parseEntry, 'range');
-    fail(parseRange.parseEntry, 'union');
-  });
-
-  describe('.parseRange()', function () {
-    succeed(parseRange.parseRange, 'entry');
-    succeed(parseRange.parseRange, 'range');
-
-    fail(parseRange.parseRange, 'union');
+    fail(parseRange.withoutUnions, 'union');
   });
 });
