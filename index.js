@@ -110,7 +110,11 @@
   var parseUnion = function (union) {
     var i, n, results;
 
-    if (!is.string(union))
+    if (is.number(union))
+    {
+      union = ''+ union;
+    }
+    else if (!is.string(union))
     {
       throw new Error('invalid union: '+ union);
     }

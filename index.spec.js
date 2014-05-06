@@ -11,8 +11,11 @@ var expect = require('chai').expect;
 //====================================================================
 
 describe('parseRange()', function () {
-  it('parses a single entry', function () {
+  it('parses a single entry as a string', function () {
     expect(parseRange('1')).to.have.members([1]);
+  });
+  it('parses a single entry as a number', function () {
+    expect(parseRange(1)).to.have.members([1]);
   });
 
   it('parses a single range', function () {
