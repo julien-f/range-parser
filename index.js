@@ -127,6 +127,20 @@
     }
     return results;
   };
+  parseUnion.parseEntry = function (entry) {
+    return [parseEntry(entry)];
+  };
+  parseUnion.parseRange = function (range) {
+    // FIXME: duplicated in parseUnion.
+    if (is.number(range))
+    {
+      range = ''+ range;
+    }
+
+    var results = [];
+    parseRange(range, results);
+    return results;
+  };
 
   return parseUnion;
 }));
