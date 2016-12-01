@@ -15,9 +15,9 @@
     "url": "https://github.com/julien-f/range-parser"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "lodash": "^2.4.1",
-    "mocha": "^1.19.0"
+    "chai": "^3.5.0",
+    "lodash": "^4.16.6",
+    "mocha": "^3.1.2"
   },
   "scripts": {
     "test": "mocha -R spec index.spec.js"
