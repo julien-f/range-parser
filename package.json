@@ -17,9 +17,11 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "lodash": "^4.16.6",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "standard": "^8.6.0"
   },
   "scripts": {
+    "posttest": "standard",
     "test": "mocha -R spec index.spec.js"
   },
   "files": [
