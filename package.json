@@ -15,14 +15,13 @@
     "url": "https://github.com/julien-f/range-parser"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "jest": "^17.0.3",
     "lodash": "^4.16.6",
-    "mocha": "^3.1.2",
     "standard": "^8.6.0"
   },
   "scripts": {
     "posttest": "standard",
-    "test": "mocha -R spec index.spec.js"
+    "test": "jest"
   },
   "files": [
     "index.js"

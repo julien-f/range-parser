@@ -1,15 +1,10 @@
 'use strict'
 
-/* eslint-env mocha */
+/* eslint-env jest */
 
-// ====================================================================
+var each = require('lodash/forEach')
 
 var parseRange = require('./')
-
-// --------------------------------------------------------------------
-
-var each = require('lodash').each
-var expect = require('chai').expect
 
 // ====================================================================
 
@@ -51,7 +46,7 @@ var data = {
 var succeed = function (parser, type) {
   each(data[type], function (data, title) {
     it('successfully parse a ' + type + ' ' + title, function () {
-      expect(parser(data[0])).to.have.members(data[1])
+      expect(parser(data[0])).toEqual(data[1])
     })
   })
 }
@@ -61,7 +56,7 @@ var fail = function (parser, type) {
     it('fails to parse a ' + type + ' ' + title, function () {
       expect(function () {
         parser(data[0])
-      }).to.throw(Error)
+      }).toThrowError(Error)
     })
   })
 }
