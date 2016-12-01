@@ -1,8 +1,4 @@
-# range-parser
-
-[![Build Status](https://img.shields.io/travis/julien-f/range-parser/master.svg)](http://travis-ci.org/julien-f/range-parser)
-[![Dependency Status](https://david-dm.org/julien-f/range-parser/status.svg?theme=shields.io)](https://david-dm.org/julien-f/range-parser)
-[![devDependency Status](https://david-dm.org/julien-f/range-parser/dev-status.svg?theme=shields.io)](https://david-dm.org/julien-f/range-parser#info=devDependencies)
+# range-parser [![Build Status](https://img.shields.io/travis/julien-f/range-parser/master.svg)](http://travis-ci.org/julien-f/range-parser)
 
 > Parse ranges and unions: '1-3,5-7,12' → [1, 2, 3, 5, 6, 7, 12]
 
