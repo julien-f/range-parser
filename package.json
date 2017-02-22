@@ -15,7 +15,7 @@
     "url": "https://github.com/julien-f/range-parser"
   },
   "devDependencies": {
-    "jest": "^19.0.0",
+    "jest": "^19.0.1",
     "lodash": "^4.16.6",
     "standard": "^8.6.0"
   },
